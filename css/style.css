@@ -1,19 +1,4 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+    background: #090E22;
+    color: transparent;
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background-color: blue; /* Cor padrão */
-}
-
-.hamburger.is-active .hamburger-inner, 
-.hamburger.is-active .hamburger-inner::before, 
-.hamburger.is-active .hamburger-inner::after {
-    background-color: red; /* Cor quando ativo */
-}
-
-.hamburger-box {
-    width: 3rem;
-    height: 3rem;
-  }
