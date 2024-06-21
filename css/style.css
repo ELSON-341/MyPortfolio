@@ -117,11 +117,8 @@ section#home #apresentation p {
 
 section#home #apresentation #skills i {
     font-size: 50px;
-    transition: .4s ease;
-}
-
-section#home #apresentation #skills i:hover {  
-    transform: scale(1.2);
+    width: 50px;
+    margin-right: 5px;
 }
 
 section#home #apresentation #skills i:nth-child(1) {
@@ -138,4 +135,59 @@ section#home #apresentation #skills i:nth-child(3) {
 
 section#home #apresentation #skills i:last-child {
     color: #61dafb;
+}
+
+/* animations */
+section#home #apresentation h1,
+section#home #apresentation p {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showApresentations .5s 1 forwards;
+}
+
+
+@keyframes showApresentations {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+section#home #apresentation p {
+    animation-delay: .3s;
+}
+
+
+/* animations skills */
+section#home #apresentation #skills i:nth-child(1) {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: affectSkills .5s .2s 1 ease-in forwards;
+}
+
+section#home #apresentation #skills i:nth-child(2) {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: affectSkills .5s .7s 1 ease-in forwards;
+}
+
+section#home #apresentation #skills i:nth-child(3) {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: affectSkills .5s 1.3s 1 ease-in forwards;
+}
+
+section#home #apresentation #skills i:last-child {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: affectSkills .5s 1.9s 1 ease-in forwards;
+}
+
+@keyframes affectSkills {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
