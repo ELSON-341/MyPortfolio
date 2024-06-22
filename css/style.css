@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Poppins" ;
+    font-family:"Poppins";
 }
 
 :root {
@@ -45,6 +45,7 @@ header {
  justify-content: space-between;
  align-items: center;
  padding: 1rem 3rem;
+ z-index: 5;
  height: 75px;
 }
 
@@ -65,6 +66,7 @@ header nav {
 
 header nav a {
     color: var(--white-color);
+    z-index: 6;
     position: relative;
 }
 
@@ -91,15 +93,16 @@ header nav a:hover::after {
 
 /* main */
 section#home {
-    height: calc(100vh - 80px);
+    height: 100vh;
     width: 100%;
+    margin-top: -75px;
     position: relative;
 }
 
 section#home #apresentation {
     position: absolute;
     left: 5%;
-    top: 160px;
+    top: 190px;
 }
 
 section#home #apresentation h1 {
