@@ -179,15 +179,31 @@ section#home #apresentation #skills i:nth-child(3) {
     animation: affectSkills .5s 1.3s 1 ease-in forwards;
 }
 
-section#home #apresentation #skills i:last-child {
+section#home #apresentation #skills #react-container {
+    display: inline-block;
     transform: translateX(-20px);
     opacity: 0;
     animation: affectSkills .5s 1.9s 1 ease-in forwards;
+}
+
+section#home #apresentation #skills #react-container i {
+    animation: rotateReact 3.5s 2s linear infinite forwards;
+    opacity: 1;
 }
 
 @keyframes affectSkills {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes rotateReact {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
