@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"Poppins";
+    transition: 3.s;
 }
 
 :root {
@@ -20,13 +21,12 @@
     --lightgreen-color: lightgreen;
 }
 
-
-
 body, html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 65.5%;
     background-color: var(--main-color);
+    scrollbar-color: var(--second-color) var(--main-color);
 }
 
 img {
