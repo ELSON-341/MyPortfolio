@@ -55,20 +55,15 @@ header {
 }
 
 header.active {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
     left: 0;
     transition: .5s;
-    border-bottom: 2px solid rgb(255, 255, 255);
-}
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 
-header.active a {
-    color: var(--second-color);
-}
-
-header.active a:hover {
-    color: var(--white-color);
 }
 
 header h3#logo {
@@ -104,6 +99,7 @@ header nav a::after {
     left: 0;
     bottom: -5px;
     width: 0;
+    border-radius: 10px;
     transform: scale(0, 1);
     transition: transform .5s ease;
 }
