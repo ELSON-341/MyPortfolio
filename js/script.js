@@ -1,3 +1,14 @@
+const header = document.querySelector('header')
+let lastScrollTop = 0
+
+window.onscroll = () => {
+    if(window.scrollY > 0) {
+        header.classList.add('active')
+    } else {
+        header.classList.remove('active')
+    }
+}
+
 particlesJS("home", {
     "particles": {
         "number": {
