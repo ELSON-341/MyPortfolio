@@ -2,11 +2,17 @@ const header = document.querySelector('header')
 let lastScrollTop = 0
 
 window.onscroll = () => {
-    if(window.scrollY > 0) {
+    const currentScroll = window.scrollY
+
+    if(currentScroll > lastScrollTop) {
+        header.classList.add('show')
         header.classList.add('active')
     } else {
+        header.classList.remove('show')
         header.classList.remove('active')
     }
+
+    lastScrollTop = 0 ? 0 : currentScroll
 }
 
 particlesJS("home", {

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CDN animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- JavaScript -->
   <script src="js/script.js" defer></script>
+  <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
   <title>Elson</title>
 </head>
-
 <body>
   <header>
-    <h3 id="logo">Elson</h3>
-    <nav>
-      <a href="">Home</a>
-      <a href="">Sobre mim</a>
+    <a href="#home">
+      <h3 id="logo">Elson</h3>
+    </a>
+    <nav data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in">
+      <a href="#about-me">Sobre mim</a>
       <a href="">Projetos</a>
       <a href="">Contatos</a>
     </nav>
@@ -34,17 +38,24 @@
       </div>
     </section>
     <section id="about-me">
-      <div id="me-container">
+      <div id="me-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in">
         <figure>
           <img src="img/elson.jpg" alt="Minha foto">
         </figure>
         <article>
           <h2>Criando soluções inovadoras com códico</h2>
-          <p>Sou Elson Santos, desenvolvedor Front-end, sempre aprendendo novas habilidades e pronto para resolver problemas.</p>
+          <p>Sou Elson Santos, desenvolvedor Front-end, sempre aprendendo novas habilidades e pronto para resolver
+            problemas.</p>
         </article>
       </div>
     </section>
   </main>
 </body>
+<!-- particles -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<!-- CDN animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

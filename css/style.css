@@ -66,12 +66,19 @@ header.active {
 
 }
 
-header h3#logo {
+header.show {
+    transform: translateY(0);
+    transition: 1s;
+}
+
+
+header a h3#logo {
     font-size: 2.5rem;
     font-weight: 400;
     font-family: "Monoton", sans-serif;
     color: var(--second-color);
     text-transform: uppercase;
+    z-index: 6;
 }
 
 header nav {
