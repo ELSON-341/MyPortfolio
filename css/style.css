@@ -78,7 +78,7 @@ header a h3#logo {
     font-family: "Monoton", sans-serif;
     color: var(--second-color);
     text-transform: uppercase;
-    z-index: 6;
+    z-index: 10;
 }
 
 header nav {
@@ -86,6 +86,7 @@ header nav {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    z-index: 10;
 }
 
 header nav a {
@@ -226,7 +227,7 @@ section#home #apresentation p {
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showApresentations .5s 1 forwards;
+    animation: showApresentations .7s 1 forwards;
 }
 
 
