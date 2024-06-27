@@ -52,6 +52,12 @@ h2.title span {
 
 p {
     color: var(--white-color);
+    line-height: 2;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+    text-indent: 1.5rem;
+    text-align: justify;
 }
 
 /* header  */
@@ -182,7 +188,7 @@ section#home #apresentation #skills i:last-child {
 
 /* about-me */
 section#about-me {
-    padding: 20% 7%;
+    padding: 13% 7%;
     height: 100%;
 }
 
@@ -237,7 +243,7 @@ section#about-me #me-container article p {
 /* project */
 
 section#project {
-    padding: 25% 7%;
+    padding: 13% 7%;
     height: 100%;
 }
 
@@ -270,6 +276,15 @@ section#project #project-container .projec-box-reverse figure img {
 section#project #project-container .project-box article , 
 section#project #project-container .projec-box-reverse article {
     flex: 1 1 20rem;
+}
+
+section#project #project-container .project-box article h3 , 
+section#project #project-container .projec-box-reverse article h3 {
+    text-align: center;
+    color: var(--second-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 /* animations */
