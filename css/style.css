@@ -38,6 +38,18 @@ a {
     font-size: 16px;
 }
 
+h2.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
+    color: var(--white-color);
+}
+
+h2.title span {
+    color: var(--second-color);
+}
+
 p {
     color: var(--white-color);
 }
@@ -72,7 +84,7 @@ header.show {
 }
 
 
-header a h3#logo {
+header a span#logo {
     font-size: 2.5rem;
     font-weight: 400;
     font-family: "Monoton", sans-serif;
@@ -170,7 +182,8 @@ section#home #apresentation #skills i:last-child {
 
 /* about-me */
 section#about-me {
-    padding: 10% 7%;
+    padding: 20% 7%;
+    height: 100%;
 }
 
 section#about-me #me-container {
@@ -206,7 +219,7 @@ section#about-me #me-container article::before {
     left: -2rem;
 }
 
-section#about-me #me-container article h2 {
+section#about-me #me-container article h3 {
     line-height: 1;
     font-size: 3.5rem;
     color: var(--second-color);
@@ -219,6 +232,44 @@ section#about-me #me-container article p {
     line-height: 25px;
     margin-bottom: 1.5rem;
     text-indent: 1.5rem;
+}
+
+/* project */
+
+section#project {
+    padding: 25% 7%;
+    height: 100%;
+}
+
+
+section#project #project-container .project-box,
+section#project #project-container .projec-box-reverse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 5.5rem;
+}
+
+section#project #project-container .projec-box-reverse {
+    flex-direction: row-reverse;
+}
+
+section#project #project-container .project-box figure, 
+section#project #project-container .projec-box-reverse figure  {
+    flex: 1 1 30rem;
+}
+
+section#project #project-container .project-box figure img, 
+section#project #project-container .projec-box-reverse figure img {
+    width: 100%;
+    height: 100%;
+}
+
+
+section#project #project-container .project-box article , 
+section#project #project-container .projec-box-reverse article {
+    flex: 1 1 20rem;
 }
 
 /* animations */
