@@ -69,8 +69,8 @@ p {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 1.5rem;
-    text-indent: 1.5rem;
-    text-align: justify;
+    /* text-indent: 1.5rem; */
+    text-align: center;
 }
 
 /* header  */
@@ -154,7 +154,7 @@ header nav a:hover::after {
 
 /* home */
 section#home {
-    margin: -75px 0 5rem;
+    margin-top: -75px;
     height: 100vh;
     position: relative;
 }
