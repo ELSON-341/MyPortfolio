@@ -3,13 +3,10 @@ let lastScrollTop = 0
 
 window.onscroll = () => {
     const currentScroll = window.scrollY
-
     if(currentScroll > lastScrollTop) {
-        header.classList.add('show')
-        header.classList.add('active')
+        header.classList.add('hidden')
     } else {
-        header.classList.remove('show')
-        header.classList.remove('active')
+        header.classList.remove('hidden')
     }
 
     lastScrollTop = 0 ? 0 : currentScroll

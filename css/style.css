@@ -20,6 +20,11 @@
     --white-color: white;
     --lightgreen-color: lightgreen;
     --box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 10px 6px;
+    --html-color:#e34f26;
+    --css-color: #1572b6;
+    --javaScript-color: #f7df1e;
+    --react-color: #61dafb;
+    
 }
 
 body, html {
@@ -71,25 +76,27 @@ p {
 /* header  */
 
 header {
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: .5rem 3rem;
- z-index: 5;
- width: 100%;
- height: 60px;
-}
-
-header.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
     background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
+    padding: .5rem 3rem;
+    z-index: 5;
     transition: .5s;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
 
+
+header.hidden {
+    transform: translateY(-100%);
+    transition: 1s;
 }
 
 header.show {
@@ -147,7 +154,8 @@ header nav a:hover::after {
 
 /* home */
 section#home {
-    margin-top: -75px;
+    margin: -75px 0 5rem;
+    height: 100vh;
     position: relative;
 }
 
@@ -177,19 +185,19 @@ section#home #apresentation #skills i {
 }
 
 section#home #apresentation #skills i:nth-child(1) {
-    color: #e34f26;
+    color: var(--html-color);
 }
 
 section#home #apresentation #skills i:nth-child(2) {
-    color: #1572b6;
+    color: var(--css-color);
 }
 
 section#home #apresentation #skills i:nth-child(3) {
-    color: #f7df1e;
+    color: var(--javaScript-color);
 }
 
 section#home #apresentation #skills i:last-child {
-    color: #61dafb;
+    color: var(--react-color);
 }
 
 /* about-me */
@@ -235,14 +243,6 @@ section#about-me #me-container article h3 {
     font-size: 3.5rem;
     color: var(--second-color);
     margin-bottom: 1.5rem;
-}
-
-section#about-me #me-container article p {
-    line-height: 2;
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 1.5rem;
-    text-indent: 1.5rem;
 }
 
 /* project */
@@ -301,6 +301,45 @@ section#project #project-container .projec-box-reverse article h3 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+
+.techonologys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 107px);
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.techonologys span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 4px 5px;
+    text-shadow: var(--box-shadow);
+    color: var(--white-color)
+}
+
+.techonologys span:nth-child(1){
+    background-color: var(--html-color);
+}
+
+.techonologys span:nth-child(2){
+    background-color: var(--css-color);
+}
+
+.techonologys span:nth-child(3) {
+    background-color: var(--javaScript-color);
+}
+
+.techonologys span:nth-child(4) {
+    background-color: var(--react-color);
+}
+
+section#contact {
+
 }
 
 /* animations */
