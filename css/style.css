@@ -200,13 +200,16 @@ section#home #apresentation #skills i:last-child {
 /* about-me */
 section#about-me {
     padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 section#about-me #me-container {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    align-items: center;
 }
 
 section#about-me #me-container figure {
@@ -335,10 +338,13 @@ section#project #project-container .projec-box-reverse article h3 {
     background-color: var(--react-color);
 }
 
+/* contacts */
+
 section#contact #contact-contaimer {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
  gap: 1.5rem;
+ padding: 0 7%;
 }
 
 section#contact #contact-contaimer .box {
@@ -364,6 +370,21 @@ section#contact #contact-contaimer .box:hover i {
     background-color: var(--second-color);
     color: var(--white-color);
     border: 2px solid var(--white-color);
+}
+
+section#contact #contact-contaimer .box h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--second-color);
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: .8rem;
+    background-color: black;
 }
 
 /* animations */
