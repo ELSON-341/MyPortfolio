@@ -381,10 +381,14 @@ section#contact #contact-contaimer .box h3 {
 /* footer */
 
 footer {
-    text-align: center;
     margin: 0 auto;
-    padding: .8rem;
+    text-align: center;
+    padding: 2.5rem;
     background-color: black;
+}
+
+footer p {
+    line-height: 9px;
 }
 
 /* animations */
