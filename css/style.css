@@ -358,6 +358,10 @@ section#project #project-container .projec-box-reverse article h3 {
     border: 1px solid #ccc;
 }
 
+#contact-contaimer #form-control {
+    display: flex;
+}
+
 #contact-contaimer #form-control input:not(:last-child) {
     max-width: 100%;
     margin-right: 10px;
