@@ -90,15 +90,14 @@
     <section id="contact">
       <h2 class="title">Meus <span>contatos</span></h2>
       <div id="contact-contaimer">
-        <div class="box">
-          <i class='bx bxs-envelope'></i>
-          <h3>E-mail</h3>
-          <a href="mailto:elson.sn314@gmail.com">elson.sn314@gmail.com</a>
-        </div>
-        <div class="box">
-          <i class='bx bxs-phone'></i>
-          <h3>Telefone</h3>
-        </div>
+        <form action="" method="post">
+          <div id="form-control">
+            <input type="text" name="name" id="name" required minlength="1" maxlength="100">
+            <input type="email" name="email" id="email" required minlength="1" maxlength="100">
+          </div>
+          <textarea name="msg" id="msg"></textarea>
+          <input type="submit" value="Enviar">
+        </form>
       </div>
     </section>
   </main>
