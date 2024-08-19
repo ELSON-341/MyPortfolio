@@ -1,5 +1,35 @@
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 576px) {
     html {
-        font-size: 50%;
+        font-size: 40%;
+    }
+
+
+    section#home #apresentation h1 {
+        font-size: 5rem;
+    }
+
+    section#home #apresentation p {
+        font-size: 15px;
+    }
+
+    section#contact h2  {
+        font-size: 4.5rem;
+    }
+
+    #contact-contaimer #form-control {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #contact-contaimer input,
+    #contact-contaimer textarea {
+        margin: 1rem 0;
+        width:  100%;
+    }
+
+    footer p {
+        text-align: center;
     }
 }
+
