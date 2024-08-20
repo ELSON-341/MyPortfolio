@@ -1,8 +1,11 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 625px) {
     html {
         font-size: 40%;
     }
 
+    header nav {
+        display: none;
+    }
 
     section#home #apresentation h1 {
         font-size: 5rem;
@@ -14,6 +17,7 @@
 
     section#contact h2  {
         font-size: 4.5rem;
+        padding: 3rem 0;
     }
 
     #contact-contaimer #form-control {
