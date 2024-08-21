@@ -68,7 +68,7 @@ particlesJS("home", {
             "anim": {
                 "enable": false,
                 "speed": 4,
-                "size_min": 0.3,
+                "size_min": 0.9,
                 "sync": false
             }
         },
