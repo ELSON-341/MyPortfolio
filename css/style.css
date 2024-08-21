@@ -110,6 +110,37 @@ header a span#logo {
     z-index: 10;
 }
 
+header .hamburger {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 11;
+    display: none;
+}
+
+header .hamburger span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: var(--second-color);
+    transition: .2s linear;
+}
+
+header .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+header .hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+header .hamburger.active span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 header nav {
     display: flex;
     justify-content: center;

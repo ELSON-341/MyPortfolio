@@ -3,9 +3,32 @@
         font-size: 40%;
     }
 
-    header nav {
-        display: none;
+    header .hamburger {
+        display: flex;
     }
+
+    header nav {
+        position: absolute;
+        top: 9.5rem;
+        right: -20rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        max-width: 30rem;
+        background-color: white;
+        transition: .8s;
+    }
+
+    header nav.active {
+        right: 1.5rem;
+    }
+
+    header nav a {
+        color: black;
+        border-bottom: 1px dotted black;
+        width: 100%;
+    }
+    
 
     section#home #apresentation h1 {
         font-size: 5rem;
