@@ -254,6 +254,7 @@ section#about-me #me-container article {
     padding-left: .5rem;
     height: 100%;
     position: relative;
+    
 }
 
 section#about-me #me-container article::before {
@@ -271,6 +272,11 @@ section#about-me #me-container article h3 {
     font-size: 3.5rem;
     color: var(--second-color);
     margin-bottom: 1.5rem;
+}
+
+section#about-me #me-container article p {
+    text-indent: 2rem;
+    text-align: justify;
 }
 
 /* project */
