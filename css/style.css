@@ -340,6 +340,7 @@ section#project #project-container .projec-box-reverse article h3 {
 
 .techonologys {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin-bottom: 2rem;
